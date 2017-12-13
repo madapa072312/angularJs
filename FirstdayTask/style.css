@@ -1,0 +1,11 @@
+.calculation-result{
+    background-color : rgb(0, 128, 0);
+}
+
+.calculation-result-blue{
+    background-color : blue;
+}
+
+.calculation-result-red{
+    background-color : red;
+}

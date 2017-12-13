@@ -1,0 +1,13 @@
+Input1 : <input type="text" ng-model="$ctrl.val1" ng-change="$ctrl.onInputChange()"> <br>
+Input2 : <input type="text" ng-model="$ctrl.val2" ng-change="$ctrl.onInputChange()"><br>
+
+<div>
+<div id="result" ng-if="$ctrl.result" ng-class="{'calculation-result':$ctrl.isCalculated}">
+    {{$ctrl.resultText || 'Result is'}}  {{$ctrl.result}}  <br>
+</div>
+
+<button ng-click="$ctrl.add($ctrl.val1,$ctrl.val2)"> + </button>
+<button ng-click="$ctrl.sub($ctrl.val1,$ctrl.val2)"> - </button>
+<button ng-click="$ctrl.mult($ctrl.val1,$ctrl.val2)"> * </button>
+<button ng-click="$ctrl.divide($ctrl.val1,$ctrl.val2)"> / </button>
+</div>

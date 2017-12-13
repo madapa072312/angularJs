@@ -1,0 +1,36 @@
+<h2>
+    {{$ctrl.greeting | uppercase}}
+</h2>
+
+<h2>
+    {{$ctrl.greeting | lowercase}}
+</h2>
+
+<h2>
+    {{$ctrl.greeting}}
+</h2>
+
+<h2>
+      {{$ctrl.dob | date:'MM/dd/yyyy'}}
+</h2>
+
+<h2>
+        {{$ctrl.greeting | myName : 'Completed' }}
+</h2>
+  
+<h2>
+        {{$ctrl.num | ageCheck : 11 }}
+</h2>
+
+<h2>
+        {{$ctrl.num | ageCheck }}
+</h2>
+
+
+<h2>
+        {{30 | ageCheck }}
+</h2>
+
+<h2>
+        {{30 | ageCheck : 40 }}
+</h2>

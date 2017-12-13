@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myCalculators">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Header</h2>
+    </div>
+    <div ng-controller="MyCalciCtrl">
+        Input1 : <input type="text" ng-model="val1" ng-change="onInputChange()"> <br>
+        Input2 : <input type="text" ng-model="val2" ng-change="onInputChange()"><br>
+
+        <div>
+        <div id="result" ng-class="{'calculation-result':isCalculated}">
+            Result is  {{result}}  <br>
+        </div>
+
+        <button ng-click="add(val1,val2)"> + </button>
+        <button ng-click="sub(val1,val2)"> - </button>
+        <button ng-click="mult(val1,val2)"> * </button>
+        <button ng-click="divide(val1,val2)"> / </button>
+        </div>
+
+    </div>
+
+    <div>
+            <h2>content</h2>
+            <my-calculator result-text="MyText is"></my-calculator>
+    </div>
+
+    <div>
+            <h2>Footer</h2>
+            <my-calculator></my-calculator>
+    </div>
+
+    <script src="angular.js"></script>
+    <script src="calculator.js"></script>
+</body>
+</html>

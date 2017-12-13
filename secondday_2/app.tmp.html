@@ -1,0 +1,11 @@
+<my-slide
+    slideshow-title="Dogs"
+    slideshow-items="$ctrl.dogList">
+</my-slide>
+<br><br><br><br>
+<h4 ng-if="$ctrl.catSlideShowCompleted">Cat slide completed</h4>
+<my-slide
+    slideshow-title="Cats"
+    slideshow-items="$ctrl.catList"
+    on-completed="$ctrl.onCatSlideShowCompleted()">
+</my-slide>
